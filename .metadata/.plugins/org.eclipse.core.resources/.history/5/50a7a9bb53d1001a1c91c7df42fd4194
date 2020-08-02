@@ -1,0 +1,17 @@
+package com.dal.csv;
+
+import java.util.Set;
+
+import com.dal.csv.entity.StudentInfo;
+
+public class ReadCSVFileApplication {
+
+	public static void main(String[] args) {
+
+		CSVReader csvReader = new CSVReader();
+		//read studentinfo list
+		Set<StudentInfo> readStudentInfoCSV = csvReader.readStudentInfoCSV();
+		
+		
+	}
+}

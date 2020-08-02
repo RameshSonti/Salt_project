@@ -1,0 +1,35 @@
+package com.dal.csv.dao;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.dal.csv.entity.CourseInfo;
+import com.dal.csv.util.ConnectionUtil;
+
+/**
+ * 
+ * This class communicate db for course CRUD operation
+ *
+ */
+public class CourseDAO {
+
+	/**
+	 * this method store course list into COURSE_INFO table
+	 * 
+	 * @param list
+	 * @return
+	 */
+	public String saveCourseList(List<CourseInfo> list) {
+
+		// get new connection
+		Connection connection = ConnectionUtil.getNewConnection();
+		try {
+			
+		}catch (SQLException e) {
+		System.err.println(e);
+		}
+	
+	}
+	
+}

@@ -1,0 +1,9 @@
+package com.dal.csv.dao;
+
+/**
+ * This class provide functionalities to communicat with db 
+ *
+ */
+public interface CourseDAO {
+
+}

@@ -1,0 +1,17 @@
+package com.dal.multithreading;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+import com.dal.multithreading.pojo.Student;
+
+public class MultitreadingExample {
+	public static void main(String[] args) {
+
+
+		ExecutorService executorService = Executors.newFixedThreadPool(10);
+
+	}
+}

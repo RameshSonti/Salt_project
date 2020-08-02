@@ -1,0 +1,24 @@
+package com.dal.multithreading;
+
+import com.dal.multithreading.pojo.Student;
+import com.dal.multithreading.util.ConverterUtil;
+
+/**
+ * This class process student list to convert from java to json and vice versa
+ * 
+ *
+ */
+public class StudentCommand implements Runnable {
+
+	private Student student;
+
+	public StudentCommand(Student student) {
+		this.student = student;
+	}
+
+	@Override
+	public void run() {
+		String json = ConverterUtil.javaToJson(student);
+		System.out.println(json);
+	}
+}

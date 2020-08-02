@@ -1,0 +1,12 @@
+package com.dal.javathread.resource;
+
+import java.util.List;
+
+import com.dal.javathread.bean.Employee;
+
+public class EmployeeResource {
+
+	public List<Employee> getAllEmployee(){
+		
+	}
+}

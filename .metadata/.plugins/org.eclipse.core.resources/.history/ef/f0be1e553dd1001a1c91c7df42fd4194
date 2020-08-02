@@ -1,0 +1,14 @@
+package com.dal.csv.dao;
+
+import com.dal.csv.entity.StudentInfo;
+
+/**
+ * This class provide functionalities to communicate with db
+ *
+ */
+public class CourseDAO {
+
+	public StudentInfo create(StudentInfo studentInfo) {
+		
+	}
+}

@@ -1,0 +1,8 @@
+
+public class ConnectionUtil {
+
+	static {
+	Class.forName(".mysql.cj.jdbc.Driver");
+	
+	}
+}

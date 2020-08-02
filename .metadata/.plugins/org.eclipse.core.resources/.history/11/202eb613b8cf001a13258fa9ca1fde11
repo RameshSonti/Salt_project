@@ -1,0 +1,16 @@
+package com.dal.multithreading;
+
+import java.util.Arrays;
+import java.util.List;
+
+
+
+public class MultitreadingExample {
+	public static void main(String[] args) {
+
+		List<Product> list = Arrays.asList(new Product(121, "AAA", 9343), new Product(122, "BBB", 7343),
+				new Product(123, "CCC", 4343), new Product(124, "DDD", 3343), new Product(125, "EEE", 643),
+				new Product(126, "FFF", 5543), new Product(127, "GGG", 3503), new Product(129, "HHH", 46603),
+				new Product(128, "III", 55343));
+	}
+}

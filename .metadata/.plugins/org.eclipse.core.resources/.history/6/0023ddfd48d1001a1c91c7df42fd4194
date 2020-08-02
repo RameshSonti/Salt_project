@@ -1,0 +1,15 @@
+package com.dal.csv;
+
+import com.dal.csv.entity.StudentCourseInfo;
+import com.dal.csv.entity.StudentInfo;
+
+public class StudentService {
+
+	public StudentInfo readStudentInfoCSV() {
+
+	}
+
+	public StudentCourseInfo readStudentCourseInfo() {
+
+	}
+}

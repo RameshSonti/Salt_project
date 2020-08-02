@@ -1,0 +1,14 @@
+
+public class ConnectionUtil {
+
+	static {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			System.out.println("MYSQL Drive Loaded");
+		} catch (ClassNotFoundException e) {
+			
+			e.printStackTrace();
+		}
+
+	}
+}

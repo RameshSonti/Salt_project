@@ -1,0 +1,19 @@
+package com.dal.javathread.command;
+
+import com.dal.javathread.bean.Employee;
+
+public class EmployeeConverterCommand implements Runnable {
+
+	Employee employee;
+
+	public EmployeeConverterCommand(Employee employee) {
+		this.employee = employee;
+	}
+
+	@Override
+	public void run() {
+		System.out.println(currentTreadName+"=>"+json);
+		
+	}
+
+}

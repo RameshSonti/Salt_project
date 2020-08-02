@@ -1,0 +1,6 @@
+package com.dal.multithreading;
+
+
+public class StudentCommand implements Runnable{
+
+}

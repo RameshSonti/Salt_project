@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.dal.multithreading.repository.StudentRepository"/>
+<fullyQualifiedTypeName name="com.dal.multithreading.util.ConverterUtil"/>
+<fullyQualifiedTypeName name="com.dal.multithreading.pojo.Student"/>
+<fullyQualifiedTypeName name="com.dal.multithreading.StudentCommand"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.EmptyStackException"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="com.dal.multithreading.command.StudentCommand"/>
+<fullyQualifiedTypeName name="com.google.gson.Gson"/>
+<fullyQualifiedTypeName name="com.dal.javathread.resource.EmployeeResource"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.dal.javathread.bean.Employee"/>
+<fullyQualifiedTypeName name="com.dal.javathread.command.EmployeeConverterCommand"/>
+</qualifiedTypeNameHistroy>

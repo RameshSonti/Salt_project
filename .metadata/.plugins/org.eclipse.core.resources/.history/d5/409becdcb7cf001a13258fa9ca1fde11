@@ -1,0 +1,17 @@
+package com.dal.multithreading.util;
+
+import com.dal.multithreading.pojo.Student;
+import com.google.gson.Gson;
+
+/**
+ * This class provide functionalities to convert json to java and vice versa
+ *
+ */
+public class ConverterUtil {
+
+	private Gson gson = new Gson();
+
+	public Student javaToJson(Student student) {
+		return gson.fromJson(student);
+	}
+}

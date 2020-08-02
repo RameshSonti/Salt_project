@@ -1,0 +1,11 @@
+package com.dal.multithreading;
+
+/**
+ * This class process student list to convert from student class 
+ * to json and vice versa 
+ * 
+ *
+ */
+public class StudentCommand implements Runnable{
+
+}

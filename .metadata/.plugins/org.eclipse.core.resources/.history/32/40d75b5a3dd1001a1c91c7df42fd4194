@@ -1,0 +1,19 @@
+package com.dal.csv.dao;
+
+import com.dal.csv.entity.StudentInfo;
+
+/**
+ * This class provide functionalities to communicate with db
+ *
+ */
+public class CourseDAO {
+
+	/**
+	 * This method save student info in STUDENT_INFO table
+	 * @param studentInfo
+	 * @return
+	 */
+	public StudentInfo create(StudentInfo studentInfo) {
+		
+	}
+}

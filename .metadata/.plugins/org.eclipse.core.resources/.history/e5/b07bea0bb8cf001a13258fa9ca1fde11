@@ -1,0 +1,8 @@
+package com.dal.multithreading;
+
+public class MultitreadingExample {
+	public static void main(String[] args) {
+
+		
+	}
+}

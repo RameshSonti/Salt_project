@@ -1,0 +1,11 @@
+package com.dal.csv.entity;
+
+public class StudentInfo {
+
+	private String studentId;
+	private String firstName;
+	private String lastName;
+	private String address;
+	private String zipCode;
+	
+}

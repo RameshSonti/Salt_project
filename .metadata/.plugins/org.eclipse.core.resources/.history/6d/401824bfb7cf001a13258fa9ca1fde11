@@ -1,0 +1,14 @@
+package com.dal.multithreading.util;
+
+import com.dal.multithreading.pojo.Student;
+
+/**
+ * This class provide functionalities to convert json to java and vice versa
+ *
+ */
+public class ConverterUtil {
+
+	public Student javaToJson(Student student) {
+		
+	}
+}

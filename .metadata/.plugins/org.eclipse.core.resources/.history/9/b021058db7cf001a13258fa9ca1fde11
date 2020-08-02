@@ -1,0 +1,9 @@
+package com.dal.multithreading.util;
+
+/**
+ * This class provide functionalities to convert json to java and vice versa
+ *
+ */
+public class ConverterUtil {
+
+}

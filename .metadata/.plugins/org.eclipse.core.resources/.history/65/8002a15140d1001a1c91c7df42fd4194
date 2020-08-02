@@ -1,0 +1,52 @@
+package com.dal.csv.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.dal.csv.entity.StudentInfo;
+import com.dal.csv.util.ConnectionUtil;
+
+/**
+ * This class provide functionalities to communicate with db for StudentInfo
+ * entity
+ *
+ */
+public class StudentDAO {
+	/**
+	 * This method take student list and store in STUDENT_INFO table
+	 * 
+	 * @param list
+	 * @return
+	 */
+	public String create(List<StudentInfo> list) {
+		Connection connection = ConnectionUtil.getNewConnection();
+		try {
+			PreparedStatement stmt = connection
+					.prepareStatement("INSERT INTO demo.STUDENT_INFO (STUDENT_ID, FIRST_NAME, LAST_NAME, "
+							+ "ADDRESS, ZIP_CODE, PRIMARY_PHONE_NUMBER) VALUES (?, ?, ?, ?, ?, ?)");
+
+			for (StudentInfo studentInfo : list) {
+
+				stmt.setInt(1, studentInfo.getStudentId());
+				stmt.setString(2, studentInfo.getFirstName());
+				stmt.setString(3, studentInfo.getLastName());
+				stmt.setString(4, studentInfo.getAddress());
+				stmt.setString(5, studentInfo.getZipCode());
+				stmt.setString(6, studentInfo.getPrimaryPhoneNumber());
+				stmt.addBatch();
+			}
+			stmt.executeBatch();
+			return "Student info successfully stored";
+
+		} catch (SQLException e) {
+			System.err.println(e);
+			return "Exception occured while save student info" + e.getMessage();
+		}
+	}
+
+	public String saveStudentCourseList() {
+
+	}
+}

@@ -1,0 +1,9 @@
+package com.dal.csv.entity;
+
+public class StudentCourseInfo {
+
+	private int studentId;
+	private int courseId;
+	private String finalGrade;
+	
+}

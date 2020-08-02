@@ -1,0 +1,11 @@
+package com.dal.multithreading;
+
+/**
+ * This class project student list to convert from java to json and vice versa 
+ * 
+ * @author mulayam
+ *
+ */
+public class StudentCommand implements Runnable{
+
+}

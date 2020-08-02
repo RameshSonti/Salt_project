@@ -1,0 +1,11 @@
+package com.dal.csv;
+
+public class ReadCSVFileApplication {
+
+	public static void main(String[] args) {
+
+		CSVReader csvReader = new CSVReader();
+
+		System.out.println(csvReader.readStudentInfoCSV());
+	}
+}

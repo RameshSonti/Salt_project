@@ -1,0 +1,51 @@
+package com.dal.csv;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.dal.csv.entity.CourseInfo;
+import com.dal.csv.entity.StudentCourseInfo;
+import com.dal.csv.entity.StudentInfo;
+
+public class CSVReader {
+
+	private static final String STUDENT_INFO_CSV = "student_info.csv";
+	private static final String COURSE_INFO = "";
+	private static final String STUDENT_COURSE_INFO_CSV = "";
+
+	public List<StudentInfo> readStudentInfoCSV() {
+
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(STUDENT_INFO_CSV));
+			br.readLine();// read header
+			String line = null;
+			List<StudentInfo> list=new ArrayList<StudentInfo>();
+			while ((line = br.readLine()) != null) // returns a Boolean value
+			{
+				String[] student = line.split(",");    // use comma as separator  
+				StudentInfo std=new StudentInfo(Integer.parseInt( student[0]),
+						student[1],student[2] , student[3], student[4], student[5]);
+			}
+
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public StudentCourseInfo readStudentCourseInfo() {
+		return null;
+	}
+
+	public CourseInfo readCourseInfo() {
+		return null;
+	}
+}

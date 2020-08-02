@@ -1,0 +1,23 @@
+package com.dal.javathread;
+
+import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+import com.dal.javathread.bean.Employee;
+import com.dal.javathread.resource.EmployeeResource;
+
+public class JavaThreadPoolExecutorService {
+
+	public static void main(String[] args) {
+
+		EmployeeResource employeeResource = new EmployeeResource();
+		List<Employee> empList = employeeResource.getAllEmployee();
+
+		ExecutorService executorService = Executors.newFixedThreadPool(5);
+
+		// java 8 lambda expression
+		studentList.forEach(student -> executorService.execute(new StudentCommand(student)));
+
+	}
+}

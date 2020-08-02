@@ -1,0 +1,25 @@
+package com.dal.csv;
+
+import com.dal.csv.entity.CourseInfo;
+import com.dal.csv.entity.StudentCourseInfo;
+import com.dal.csv.entity.StudentInfo;
+
+public class CSVReader {
+	
+	private static final String STUDENT_INFO_CSV="";
+	private static final String COURSE_INFO="";
+	private static final String STUDENT_COURSE_INFO_CSV="";
+	
+
+	public StudentInfo readStudentInfoCSV() {
+		
+
+	}
+
+	public StudentCourseInfo readStudentCourseInfo() {
+
+	}
+	public CourseInfo readCourseInfo() {
+		
+	}
+}

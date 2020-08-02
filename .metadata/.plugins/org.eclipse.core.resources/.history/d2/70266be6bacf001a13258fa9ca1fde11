@@ -1,0 +1,9 @@
+package com.dal.javathread.bean;
+
+public class Employee {
+
+	private String empId;
+	private String name;
+	private double salary;
+
+}

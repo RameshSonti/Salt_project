@@ -1,0 +1,36 @@
+package com.dal.csv.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import com.dal.csv.entity.StudentInfo;
+import com.dal.csv.util.ConnectionUtil;
+
+/**
+ * This class provide functionalities to communicate with db
+ *
+ */
+public class CourseDAO {
+
+	/**
+	 * This method save student info into STUDENT_INFO table
+	 * 
+	 * @param studentInfo
+	 * @return
+	 */
+	public StudentInfo create(StudentInfo studentInfo) {
+		Connection connection = ConnectionUtil.getNewConnection();
+		try {
+			PreparedStatement stmt = connection.prepareStatement(
+					"INSERT INTO demo.STUDENT_INFO (STUDENT_ID, FIRST_NAME, LAST_NAME, ADDRESS, ZIP_CODE, PRIMARY_PHONE_NUMBER) VALUES (?, ?, ?, ?, ?, ?)");
+
+			stmt.setInt(1, studentInfo.getStudentId());			
+
+		} catch (SQLException e) {
+			System.err.println(e);
+		}
+		return null;
+
+	}
+}

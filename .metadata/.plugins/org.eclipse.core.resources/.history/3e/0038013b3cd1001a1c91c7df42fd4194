@@ -1,0 +1,11 @@
+package com.dal.csv.entity;
+
+public class CourseInfo {
+
+	private int courseId;
+	private int professorId;
+	private String name;
+	private int credits;
+
+	
+}

@@ -1,0 +1,17 @@
+package com.dal.csv.dao;
+
+import java.util.List;
+
+import com.dal.csv.entity.CourseInfo;
+
+/**
+ * 
+ * This class communicate db for course CRUD operation
+ *
+ */
+public class CourseDAO {
+
+	public String saveCourseList(List<CourseInfo> list) {
+
+	}
+}

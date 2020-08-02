@@ -1,0 +1,13 @@
+
+public class ConnectionUtil {
+
+	static {
+	try {
+		Class.forName(".mysql.cj.jdbc.Driver");
+	} catch (ClassNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+	}
+}
