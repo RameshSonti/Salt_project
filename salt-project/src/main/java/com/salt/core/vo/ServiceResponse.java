@@ -9,5 +9,4 @@ public class ServiceResponse<T> {
 	private String errorMessage;
 	private T data;
 	
-	
 }
